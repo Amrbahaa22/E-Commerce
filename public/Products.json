@@ -1,0 +1,82 @@
+[ {
+  "id": "1",
+  "name": "Slim Fit Shirt Cowboy",
+  "description": "Men's Shirts,Fashion Men's Casual Long Sleeve Shirt Business Slim Fit Shirt Cowboy Blouse ",
+  "price":{"value" : 25.99 , "currancy" : "$"} ,
+  "image": "/images/img1.png",
+  "category": "Men wears",
+  "stock": 120,
+  "rating": 3.5
+} ,
+{
+  "id": "2",
+  "name": "Dark blue shirt",
+  "description": "Dark blue semi-formal shirt.",
+  "price":{"value" : 22.99 , "currancy" : "$"} ,
+  "image": "/images/img2.png",
+  "category": "Men wears",
+  "stock": 80,
+  "rating": 4.7
+},
+{
+  "id": "3",
+  "name": "T-shirt",
+  "description": "Cotton Hight quality T-shirt",
+  "price":{"value" : 20 , "currancy" : "$"} ,
+  "image": "/images/img3.png",
+  "category": "Men wears",
+  "stock": 60,
+  "rating": 4.3
+},
+{
+  "id": "4",
+  "name": "Red T-shirt",
+  "description": "Red fancy t-shirt for summer time ",
+  "price":{"value" : 26 , "currancy" : "$"} ,
+  "image": "/images/img4.png",
+  "category": "Men wears",
+  "stock": 50,
+  "rating": 4.6
+},
+{
+  "id": "5",
+  "name": "Ladies T-shirt",
+  "description": "cotton sportive t-shirt.",
+  "price":{"value" : 19.5 , "currancy" : "$"} ,
+  "image": "/images/img5.png",
+  "category": "ladies wears",
+  "stock": 200,
+  "rating": 4.4
+},
+{
+  "id": "6",
+  "name": "cropped top",
+  "description": "cropped top for ladies outings and workouts",
+  "price":{"value" : 44 , "currancy" : "$"} ,
+  "image": "/images/img6.png",
+  "category": "ladies wears",
+  "stock": 300,
+  "rating": 4.8
+},
+{
+  "id": "7",
+  "name": "Yoga top",
+  "description": "Ladies top for Yoga and meditation",
+  "price":{"value" : 19.5 , "currancy" : "$"} ,
+  "image": "/images/img7.png",
+  "category": "ladies wears",
+  "stock": 150,
+  "rating": 4.2
+},
+{
+  "id": "8",
+  "name": "Cotton shirts",
+  "description": "Cotton summer collection T-shirts",
+  "price":{"value" : 18.5 , "currancy" : "$"} ,
+  "image": "/images/img8.png",
+  "category": "ladies wears",
+  "stock": 30,
+  "rating": 4.5
+}
+
+]

@@ -1,9 +1,9 @@
 import React from "react";  
 import {useState , useEffect} from 'react' ; 
 import {Product} from './product' 
-import ProductCard from './productCard' 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'; 
+import { Link } from 'react-router-dom';
+//import '../assets/productList.css'  
+import '../App.css';   
 
 
 
@@ -16,27 +16,36 @@ const ProductList : React.FC = () =>{
       .then(response =>response.json()) 
       .then(data => setProducts(data)) 
       .catch(error => console.error('error fetching data:', error))
-    },[]); 
+    },[]);  
+
+
+    const prod_card = (prod: Product): JSX.Element => {
+      return(
+        <div className ='product-card'> 
+        <img  src={prod.image}alt={prod.name} className="product-image" />
+       <h3 className ='product-title'>{prod.name}</h3>  
+       <p className='product-details'>{prod.description}</p>  
+       <div className='product-price'>{prod.price.value}{prod.price.currancy}</div>      
+       <div>
+           <button >Add to Cart</button>
+       </div>
+       </div>
+       
+      );
+    }
     
     return(  
         <>
-        <nav className ='navbar'> 
-        <div className="logo">MyWebsite</div>
-          <div className='nav-links'>
-            <a href='/'>Home</a> 
-            <a href='/'>Products</a>
-            <a href='/'>Offers</a> 
-          </div> 
-          <a href="#cart" className="cart"> <FontAwesomeIcon icon={faShoppingCart} size="2x" color="#1445c1"/></a>
-        </nav> 
-        
         <div className = 'product-list'> 
           {
-            products.map(prod =>   <ProductCard key ={prod.id} product={prod} />)
+            products.map(prod =>  
+            <Link to={`/product/${prod.id}`} key={prod.id}>
+             {prod_card(prod)}
+            </Link>) 
+           
           }
+        
         </div> 
-
-        <div><footer className='footer'>@copyRights</footer></div>
         </> 
         
     );

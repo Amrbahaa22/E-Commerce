@@ -1,24 +1,26 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "tailwindcss/tailwind.css";
+import "./index.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Header } from "./components/Header/components/Header";
+import Footer from "./components/Footer/Footer";
+import HomePage from "./pages/HomePage";
+import { Box } from "@mui/material";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col overflow-x-hidden ">
+      <Router>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
     </div>
   );
-}
+};
 
 export default App;

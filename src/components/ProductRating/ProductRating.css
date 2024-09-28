@@ -1,0 +1,38 @@
+/* stars styling */  
+.star-rating {
+    display: inline-block;
+    font-size: 16px;
+    color:  #FFAD33;
+  }
+  
+  /* Styling for empty stars */
+  .fa-star-o {
+    color: #ccc; 
+  }
+  
+  /* Styling for half star */
+  .fa-star-half-o {
+    color:  #FFAD33;
+  }
+  
+  /* Styling for star icons */
+  .fa {
+    margin-right: 2px; 
+    border-radius: 1.4px;
+  } 
+
+  .prod-rating{
+    width: 32px;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.5;
+    }
+
+
+
+

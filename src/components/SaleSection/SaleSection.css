@@ -1,0 +1,46 @@
+ .sale-section{  
+  position: relative;  
+  padding: 0px;  
+  width: 95%; 
+  height: 750px;
+  left: 85px;
+   border-bottom : 0.5px solid  #D9D9D9 ;  
+ 
+}  
+
+
+.sale-section img{
+    position : absolute;  
+    top : 0 ;  
+    left : 0 ; 
+}  
+
+.flash-sale { 
+position : relative ; 
+top: 60px ;  
+left : 8px ; 
+width: 211px;
+height: 48px;
+font-family: 'Inter';
+font-style: bold;
+font-weight: 600;
+font-size: 36px;
+line-height: 48px;
+color: #050505;
+
+} 
+
+.image-container { 
+  position : absolute ;   
+  top : 150px ;  
+	width: 95%; 
+  left: 28px;  
+
+	
+}
+
+
+.adjust-height{
+  height : 140px ; 
+}
+

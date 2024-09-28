@@ -1,0 +1,90 @@
+[ {
+  "id": "1",
+  "name": "HAVIT HV-G92 Gamepad",
+  "description": "HAVIT HV-G92 Gamepad",
+  "price":{"value" : 160 , "currancy" : "$"} ,
+  "image": "/images/ply-arm.png",
+  "category": "electronics",
+  "salePercent": 40,
+  "rating": 3.5 
+  
+ 
+} ,
+{
+  "id": "2",
+  "name": "AK-900 Wired Keyboard",
+  "description": "Dark blue semi-formal shirt.",
+  "price":{"value" : 22.99 , "currancy" : "$"} ,
+  "image": "/images/keyboard.png",
+  "category": "electronics",
+  "salePercent": 35 ,
+  "rating": 4.7 
+ 
+},
+{
+  "id": "3",
+  "name": "IPS LCD Gaming Monitor",
+  "description": "Cotton Hight quality T-shirt",
+  "price":{"value" : 20 , "currancy" : "$"} ,
+  "image": "/images/screen.png",
+  "category": "electronics",
+  "stock": 60,
+  "rating": 4.3 , 
+  "salePercent" : "30"
+},
+{
+  "id": "4",
+  "name": "S-Series Comfort Chair ",
+  "description": "Red fancy t-shirt for summer time ",
+  "price":{"value" : 26 , "currancy" : "$"} ,
+  "image": "/images/chair.png",
+  "category": "Men wears",
+  "salePercent": 25,
+  "rating": 4.6 
+ 
+},
+{
+  "id": "5",
+  "name": "Ladies T-shirt",
+  "description": "cotton sportive t-shirt.",
+  "price":{"value" : 19.5 , "currancy" : "$"} ,
+  "image": "/images/img5.png",
+  "category": "ladies wears",
+  "salePercent": 20,
+  "rating": 4.4 
+  
+},
+{
+  "id": "6",
+  "name": "cropped top",
+  "description": "cropped top for ladies outings and workouts",
+  "price":{"value" : 44 , "currancy" : "$"} ,
+  "image": "/images/img6.png",
+  "category": "ladies wears",
+  "slaePercent": 30,
+  "rating": 4.8 
+},
+{
+  "id": "7",
+  "name": "Yoga top",
+  "description": "Ladies top for Yoga and meditation",
+  "price":{"value" : 19.5 , "currancy" : "$"} ,
+  "image": "/images/img7.png",
+  "category": "ladies wears",
+  "salePercent": 12,
+  "rating": 4.2 
+
+},
+{
+  "id": "8",
+  "name": "Cotton shirts",
+  "description": "Cotton summer collection T-shirts",
+  "price":{"value" : 18.5 , "currancy" : "$"} ,
+  "image": "/images/img8.png",
+  "category": "ladies wears",
+  "salePercent": 55 ,
+  "rating": 4.5 
+
+}
+
+]

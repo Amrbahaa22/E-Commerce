@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.product-card{ 
+  position : relative ;  
+  top : 30px ;  
+  left: 80px ; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 270px;
+  height: 430px; 
+  transition: transform 0.3s ease-in-out;
+  
+  }   
+
+.product-image {  
+position : absolute ; 
+width: 270px;
+height: 250px;
+background: #F5F5F5;
+border-radius: 4px; 
+
+}  
+
+.product-image img{
+
+position: absolute;
+width: 172px;
+height: 152px;
+left: calc(50% - 172px/2);
+top: calc(50% - 152px/2);
+
+
+}
+
+.prod-name{ 
+
+position : absolute ; 
+top : 258px ; 
+width: 201px;
+height: 24px;
+font-family:'Poppins' , sans-serif;
+font-weight: 500;
+font-size: 16px;
+color: #000000;
+
+} 
+
+.prod-price{ 
+position : absolute ; 
+top : 295px ; 
+font-family: 'Poppins' , sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+color: #080808;
+}   
+
+.rating{
+    position : absolute ;  
+    bottom : 0 ; 
+} 
+
+.like-icon{ 
+position : absolute; 
+top : 8% ;  
+right : 10% ; 
+width: 34px;
+height: 34px;
+border-radius : 50% ;   
+background : white ;  
+
+} 
+
+.like-icon img{
+
+position: absolute;
+left: 5.67%;
+top: 5.83%;
+width : 100% ; 
+height : 100% ; 
+
+
+}
+
+    /**/ 
+    
+    .product-card:hover {
+      transform: scale(1.05);
+     }
+          
+     .product-card::after {
+        content: "Add to Cart";
+        position: absolute;
+        bottom: 180px;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-align: center;
+        padding: 12px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateY(100%);
+      }
+          
+     
+    .product-card:hover::after {
+        opacity: 1;
+        transform: translateY(0);
+      } 
+    
+    /* sale tag */ 
+    .sale-tag{
+      z-index: 10;
+      position: absolute;
+      padding: 0 10px ; 
+      line-height: 26px; 
+      text-align: center;
+      gap: 8px;
+      width: 55px;
+      height: 26px;
+      left: 12px;
+      top: 12px;
+      color: white;
+      background: #DB4444;
+      border-radius: 4px;
+    
+    } 
+    

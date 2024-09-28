@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.product-card{ 
+position : relative ;  
+top : 30px ;  
+left: 80px ; 
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+width: 270px;
+height: 430px; 
+transition: transform 0.3s ease-in-out;
+
+}  
+
+/* relative top-[30px] left-[80px] flex flex-col items-start p-0 gap-4 w-[270px] h-[350px] transition-transform duration-300 ease-in-out */
+
+.product-image {  
+position : absolute ; 
+width: 270px;
+height: 250px;
+background: #F5F5F5;
+border-radius: 4px; 
+
+}   
+
+/* absolute w-[270px] h-[250px] bg-[#F5F5F5] rounded-sm */
+
+.product-image img{
+
+position: absolute;
+width: 172px;
+height: 152px;
+left: calc(50% - 172px/2);
+top: calc(50% - 152px/2);
+
+
+} 
+
+/* className="absolute w-[172px] h-[152px]"
+    style={{ left: 'calc(50% - 86px)', top: 'calc(50% - 76px)' }}
+    src="path/to/your/image.jpg"
+    alt="Product" */
+
+.prod-name{ 
+
+position : absolute ; 
+top : 258px ; 
+width: 201px;
+height: 24px;
+font-family:'Poppins' , sans-serif;
+font-weight: 500;
+font-size: 16px;
+color: #000000;
+
+} 
+
+/* className="absolute top-[258px] w-[201px] h-[24px] text-black font-medium text-[16px]"
+style={{ fontFamily: 'Poppins, sans-serif' }} */
+
+.prices{
+    position : absolute ;   
+    top : 295px ;   
+    display : flex ;   
+    flex-direction : row ;  
+    justify-content : space-between ;  
+    align-items : center ;  
+    gap: 16px ; 
+
+
+} 
+
+/* className="absolute top-[295px] flex flex-row ?-between items-center gap-[16px]" */
+
+.prod-old-price { 
+
+
+font-family: 'Poppins' , sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+color: #040404;   
+opacity: 0.5; 
+text-decoration-line: line-through;
+
+}     
+
+/* className="font-medium text-[16px] text-[#040404] opacity-50"
+  style={{ fontFamily: 'Poppins, sans-serif', textDecorationLine: 'line-through' }} */
+
+.prod-nw-price { 
+   
+    font-family: 'Poppins' , sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #DB4444;     
+
+ }   
+
+ /* font-poppins font-medium text-[16px] text-custom-red */
+
+.rating{
+    position : absolute ;  
+    bottom : 0 ; 
+}  
+
+/* className="absolute bottom-0" */
+
+.like-icon{ 
+position : absolute; 
+top : 8% ;  
+right : 10% ; 
+width: 34px;
+height: 34px;
+border-radius : 50% ;   
+background : white ;  
+
+} 
+
+.like-icon img{
+
+position: absolute;
+left: 2.67%;
+top: 5.83%;
+width : 100% ; 
+height : 100% ; 
+
+
+}
+
+    /**/ 
+    
+.product-card:hover {
+  transform: scale(1.05);
+ }
+      
+ .product-card::after {
+    content: "Add to Cart";
+    position: absolute;
+    bottom: 180px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(100%);
+  }
+      
+ 
+.product-card:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  } 
+
+/* sale tag */ 
+.sale-tag{
+  z-index: 10;
+  position: absolute;
+  padding: 0 10px ; 
+  line-height: 26px; 
+  text-align: center;
+  gap: 8px;
+  width: 55px;
+  height: 26px;
+  left: 12px;
+  top: 12px;
+  color: white;
+  background: #DB4444;
+  border-radius: 4px;
+
+} 
+
+/* className="absolute z-10 px-2.5 py-0 text-center leading-[26px] gap-2.5 w-[55px] h-[26px] left-[12px] top-[12px] text-white bg-[#DB4444] rounded-md" */
+

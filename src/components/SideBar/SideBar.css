@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+  .side-arrow{
+  
+    content: ''; 
+    position: absolute;
+    top: 50%; 
+    right: -25px;  
+    transform: translateY(-50%);
+    border: solid transparent;
+    border-width: 6px 0 6px 10px; 
+    border-left-color: #000; 
+    opacity: 0; 
+    transition: opacity 0.3s ease, right 0.3s ease;  
+  
+  } 
+  
+.link-arrow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+  border: solid black;
+  border-width: 0 2px 2px 0; 
+  transform: rotate(-45deg);
+  display: inline-block;
+  padding: 3px;
+  opacity: 0;
+  transition: opacity 0.3s ease, right 0.3s ease;
+}
+
+.link-arrow:hover::after {
+  opacity: 1;
+  right: -15px; 
+}
+  
+  

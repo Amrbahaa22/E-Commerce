@@ -1,0 +1,48 @@
+[ {
+    "id": "1",
+    "category": "Cameras", 
+    "image" : "/images/Camera-icon.png"
+  
+  } ,
+  {
+    "id": "2",
+    "category": "Phones", 
+    "image" : "/images/CellPhone-icon.png"
+   
+  },
+  {
+    "id": "3",
+    "category": "Computers", 
+    "image" : "/images/Computer-icon.png"
+  },
+  {
+    "id": "4",
+    "category": "Games", 
+    "image" : "/images/Gamepad-icon.png"
+   
+  },
+  {
+    "id": "5",
+    "category": "HeadPhones", 
+    "image" : "/images/Headphone-icon.png"
+    
+  },
+  {
+    "id": "6",
+    "category": "Men", 
+    "image" : "/images/men.png"
+  },
+  {
+    "id": "7",
+    "category": "Women", 
+    "image" : "/images/women.png"
+  
+  },
+  {
+    "id": "8",
+    "category": "SmartWatches", 
+    "image" : "/images/SmartWatch-icon.png"
+  
+  }
+  
+  ]
